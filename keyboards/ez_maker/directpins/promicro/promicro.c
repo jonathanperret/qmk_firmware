@@ -15,3 +15,10 @@
  */
 
 #include "promicro.h"
+
+
+bool led_update_user(led_t led_state) {
+  writePin(B0, 1);
+  writePin(D5, 1);
+  return false;
+}
